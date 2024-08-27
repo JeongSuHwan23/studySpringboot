@@ -8,6 +8,7 @@ public class StudySpringbootApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(StudySpringbootApplication.class, args);
-	}
+    System.out.println("연결 완료");
 
+	}
 }
