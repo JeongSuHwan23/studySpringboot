@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<table border="1">
+  <tr>
+    <td>order_id</td>
+    <td>user_id</td>
+    <td>order_date</td>
+    <td>total_amount</td>
+    <td>status</td>
+  </tr>
+  <tr th:each="i : ${orders}">
+    <td th:text="${i.order_id}"></td>
+    <td th:text="${i.user_id}"></td>
+    <td th:text="${i.order_date}"></td>
+    <td th:text="${i.total_amount}"></td>
+    <td th:text="${i.status}"></td>
+  </tr>
+</table>
+</body>
+</html>

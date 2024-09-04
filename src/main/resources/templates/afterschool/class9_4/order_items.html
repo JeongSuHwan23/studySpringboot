@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<table border="1">
+  <tr>
+    <td>order_item_id</td>
+    <td>order_id</td>
+    <td>product_id</td>
+    <td>quantity</td>
+    <td>price</td>
+  </tr>
+  <tr th:each="i : ${order_items}">
+    <td th:text="${i.order_item_id}"></td>
+    <td th:text="${i.order_id}"></td>
+    <td th:text="${i.product_id}"></td>
+    <td th:text="${i.quantity}"></td>
+    <td th:text="${i.price}"></td>
+  </tr>
+</table>
+</body>
+</html>
