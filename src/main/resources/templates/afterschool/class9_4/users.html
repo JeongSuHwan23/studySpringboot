@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+  <table border="1">
+    <tr>
+      <td>user_id</td>
+      <td>username</td>
+      <td>email</td>
+    </tr>
+    <tr th:each="i : ${users}">
+      <td th:text="${i.id}"></td>
+      <td th:text="${i.username}"></td>
+      <td th:text="${i.email}"></td>
+    </tr>
+  </table>
+</body>
+</html>

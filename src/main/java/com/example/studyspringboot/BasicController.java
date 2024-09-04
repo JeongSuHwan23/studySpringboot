@@ -1,12 +1,18 @@
 package com.example.studyspringboot;
 
+import jakarta.persistence.*;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import java.util.Date;
+import java.util.List;
 
 @Controller
+@RequiredArgsConstructor
 public class BasicController {
+  private final communityRepository communityRepository;
+
   @GetMapping("/")
   @ResponseBody
   String home() {
@@ -34,6 +40,14 @@ public class BasicController {
   @ResponseBody
   String date() {
     return new Date().toString();
+  }
+
+  @GetMapping("/result")
+  @ResponseBody
+  String result() {
+    List<community> result = communityRepository.findAll();
+    System.out.println(result);
+    return "dsafadsf";
   }
 
 }

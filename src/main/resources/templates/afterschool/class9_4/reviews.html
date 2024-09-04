@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<table border="1">
+  <tr>
+    <td>review_id</td>
+    <td>product_id</td>
+    <td>user_id</td>
+    <td>rating</td>
+    <td>comment</td>
+    <td>review_date</td>
+  </tr>
+  <tr th:each="i : ${reviews}">
+    <td th:text="${i.review_id}"></td>
+    <td th:text="${i.product_id}"></td>
+    <td th:text="${i.user_id}"></td>
+    <td th:text="${i.rating}"></td>
+    <td th:text="${i.comment}"></td>
+    <td th:text="${i.review_date}"></td>
+  </tr>
+</table>
+</body>
+</html>

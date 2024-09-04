@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<table border="1">
+  <tr>
+    <td>product_id</td>
+    <td>product_name</td>
+    <td>description</td>
+    <td>price</td>
+    <td>stock_quantity</td>
+  </tr>
+  <tr th:each="i : ${product}">
+    <td th:text="${i.product_id}"></td>
+    <td th:text="${i.product_name}"></td>
+    <td th:text="${i.description}"></td>
+    <td th:text="${i.price}"></td>
+    <td th:text="${i.stock_quantity}"></td>
+  </tr>
+</table>
+</body>
+</html>
