@@ -1,14 +1,14 @@
-package com.example.studyspringboot;
+package com.example.school;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class StudySpringbootApplication {
+public class SchoolApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(StudySpringbootApplication.class, args);
+  public static void main(String[] args) {
+    SpringApplication.run(SchoolApplication.class, args);
     System.out.println("연결 완료");
+  }
 
-	}
 }

@@ -1,6 +1,5 @@
-package com.example.studyspringboot;
+package com.example.school.class9_3;
 
-import jakarta.persistence.*;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -10,8 +9,8 @@ import java.util.List;
 
 @Controller
 @RequiredArgsConstructor
-public class BasicController {
-  private final communityRepository communityRepository;
+public class BasicController1 {
+  private final com.example.school.class9_3.communityRepository communityRepository;
 
   @GetMapping("/")
   @ResponseBody

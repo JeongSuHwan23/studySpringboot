@@ -1,7 +1,6 @@
 package com.example.afterschool.class9_4;
 
 import lombok.RequiredArgsConstructor;
-import org.hibernate.query.Order;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -10,13 +9,13 @@ import java.util.List;
 
 @Controller
 @RequiredArgsConstructor
-public class BasicController {
+public class BasicController9_4 {
 
   private final UsersRepository usersRepository;
-  private final ProductRepository ProductRepository;
-  private final OrdersRepository OrdersRepository;
-  private final Order_ItemsRepository Order_ItemsRepository;
-  private final ReviewsRepository ReviewsRepository;
+  private final com.example.afterschool.class9_4.ProductRepository ProductRepository;
+  private final com.example.afterschool.class9_4.OrdersRepository OrdersRepository;
+  private final com.example.afterschool.class9_4.Order_ItemsRepository Order_ItemsRepository;
+  private final com.example.afterschool.class9_4.ReviewsRepository ReviewsRepository;
 
 
   @GetMapping("/users")

@@ -1,12 +1,12 @@
-package com.example.afterschool.class9_4;
+package com.example.afterschool;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class AfterSchoolApplication9_4 {
+public class AfterSchoolApplication {
   public static void main(String[] args) {
-    SpringApplication.run(AfterSchoolApplication9_4.class, args);
+    SpringApplication.run(AfterSchoolApplication.class, args);
     System.out.println("연결 완료");
 
   }

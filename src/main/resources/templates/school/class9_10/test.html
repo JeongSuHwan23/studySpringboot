@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<div th:replace="~{nav.html :: navbar}"></div>
+<table border="1">
+  <tr>
+    <td>id</td>
+    <td>title</td>
+    <td>subtitle</td>
+    <td>date</td>
+  </tr>
+  <tr th:each="i : ${test}">
+    <td th:text="${i.id}"></td>
+    <td th:text="${i.title}"></td>
+    <td th:text="${i.sub_title}"></td>
+    <td th:text="${i.date}"></td>
+  </tr>
+</table>
+</body>
+</html>
