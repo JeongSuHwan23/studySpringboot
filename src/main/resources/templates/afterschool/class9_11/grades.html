@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<div th:replace="~{nav.html :: navbar}"></div>
+<form action="/add-grades" method="POST">
+  <input name="student_id">
+  <input name="subject_id">
+  <input name="grade">
+  <button type="submit">버튼</button>
+</form>
+</body>
+</html>

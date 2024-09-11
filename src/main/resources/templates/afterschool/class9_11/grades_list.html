@@ -9,16 +9,14 @@
 <div th:replace="~{nav.html :: navbar}"></div>
 <table border="1">
   <tr>
-    <td>id</td>
-    <td>title</td>
-    <td>subtitle</td>
-    <td>date</td>x
+    <td>student_id</td>
+    <td>subject_id</td>
+    <td>grade</td>
   </tr>
-  <tr th:each="i : ${test}">
-    <td th:text="${i.id}"></td>
-    <td th:text="${i.title}"></td>
-    <td th:text="${i.sub_title}"></td>
-    <td th:text="${i.date}"></td>
+  <tr th:each="i : ${Grades}">
+    <td th:text="${i.student_id}"></td>
+    <td th:text="${i.subject_id}"></td>
+    <td th:text="${i.grade}"></td>
   </tr>
 </table>
 </body>

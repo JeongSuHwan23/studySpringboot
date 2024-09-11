@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<div th:replace="~{nav.html :: navbar}"></div>
+<form action="/add-students" method="POST">
+  <input name="name">
+  <input name="birth_date">
+  <input name="major">
+  <button type="submit">버튼</button>
+</form>
+</body>
+</html>
