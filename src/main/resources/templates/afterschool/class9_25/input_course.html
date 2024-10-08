@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link href="/main.css" rel="stylesheet">
+</head>
+<body>
+<div th:replace="~{nav.html :: navbar}"></div>
+<form action="/input-course" method="POST">
+  <input name="course_id">
+  <input name="course_name">
+  <input name="instructor">
+  <button type="submit">버튼</button>
+</form>
+</body>
+</html>
